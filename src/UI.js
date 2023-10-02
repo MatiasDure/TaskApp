@@ -17,13 +17,11 @@ export const CreateTaskUI = (pTask) =>
     div.appendChild(taskCheckbox);
     let checkbox = document.createElement("div");
     checkbox.classList.add("checkbox","clickable");
-    // checkbox.classList.add("clickable");
     checkboxes.push(checkbox);
     HandleCheckboxClick(checkbox);
     taskCheckbox.appendChild(checkbox);
     let icon = document.createElement("i");
     icon.classList.add("fa-regular","fa-circle");
-    // icon.classList.add("fa-circle");
     checkbox.appendChild(icon);
     let task = document.createElement("p");
     task.textContent = pTask;

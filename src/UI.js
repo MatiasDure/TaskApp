@@ -11,7 +11,6 @@ export function HandleCheckboxClick(pCheckbox)
 export function HandleRemoveTask(pRemoveBtn, pContainer, pElement, pTask)
 {
     pRemoveBtn.addEventListener("click", () => {
-        console.log("Removing task: " + pTask);
         pContainer.removeChild(pElement);
         RemoveCookie("tasks",pTask);
     });

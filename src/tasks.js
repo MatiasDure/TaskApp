@@ -47,7 +47,6 @@ function Task(pTaskId, pTask)
 
 export const LoadTasksCookies = () => {
     const tasks = LoadCookiesByKey("tasks");
-    console.log(tasks);
     tasks.forEach(task => {
         CreateTask(task);
     });

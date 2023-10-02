@@ -1,0 +1,188 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-dark:#333;
+    --primary-light:#eee;
+    --secondary-light:#ddd;
+    --secondary-dark:#444;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+header, footer
+{
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+}
+
+header
+{
+    height: 100px;
+    display: flex;
+    gap: 10px;
+    padding: 20px 30px;
+    align-items: center;
+}
+
+.page-title
+{
+    font-size: 2.5rem;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+main
+{
+    flex-grow: 1;
+    background-color: lightgray;
+    display: flex;
+    color: var(--primary-dark)
+}
+
+footer
+{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar
+{
+    background-color: var(--secondary-light);
+    min-width: 250px;
+    flex: 1;
+    padding: 20px;
+}
+
+.side-btn
+{
+    border-radius: 10px;
+}
+
+.icon-btn
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+}
+
+.icon
+{
+    width: 18px;
+    height: 18px;
+}
+
+.mainbar
+{
+    background-color: var(--primary-light);
+    flex: 3;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+.active 
+{
+    background-color: rgb(204,204,204);
+    font-weight: bold;
+}
+
+nav > div
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h1
+{
+    padding: 10px;
+}
+
+.test
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #fff;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+input
+{
+    flex: 1;
+    border: none;
+}
+
+input:focus
+{
+    outline: none;
+}
+
+.task
+{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.1rem;
+}
+
+.tasks-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task-checkbox
+{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox
+{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.checked
+{
+    background-color: green;
+}
+
+.checkbox:hover {
+    background-color: darkgreen;
+  }
+
+.hidden
+{
+    display: none;
+}
+
+.clickable
+{
+    cursor:pointer;
+}

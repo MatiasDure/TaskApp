@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Yusei+Magic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../src/styles.css">
+    <script src="./../node_modules/@fortawesome/fontawesome-free/js/solid.js" defer></script>
+    <script src="./../node_modules/@fortawesome/fontawesome-free/js/regular.js" defer></script>
+    <script src="./../node_modules/@fortawesome/fontawesome-free/js/fontawesome.js" defer></script>
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <header>
+        <i class="fa-solid fa-check-double fa-3x" aria-hidden="true"></i> 
+        <h1 class="page-title">Todo List</h1>
+    </header>
+    <main>
+        <div class="sidebar">
+            <nav>
+                <div>
+                    <div>
+                        <div class="side-btn icon-btn active" data-type="Inbox">
+                            <img src="../src/imgs/inbox.png" class="icon" alt="inbox icon">
+                            <span>Inbox</span>
+                        </div>
+                        <div class="side-btn icon-btn" data-type="Today">
+                            <img src="../src/imgs/calendar.png" class="icon" alt="calendar icon">
+                            <span>Today</span>
+                        </div>
+                        <div class="side-btn icon-btn" data-type="This week">
+                            <img src="../src/imgs/7-days.png" class="icon" alt="calendar icon">
+                            <span>This week</span>
+                        </div>
+                    </div>
+                    <h1>Projects</h1>
+                    <div id="projects-container"></div>
+                    <div class="side-btn icon-btn" data-type="AddProject">
+                        <img src="../src/imgs/plus.png" class="icon" alt="calendar icon">
+                        <span>Add Project</span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="mainbar">
+            <h1 id="projectTitle">Inbox</h1>
+            <div id="tasks-container" class="tasks-container">
+                <!-- <div class="task">
+                    <div class="task-checkbox">
+                        <div class="checkbox">
+                            <i class="fa-regular fa-circle"></i>
+                        </div>
+                    </div>
+                    <p>Task</p>
+                </div>
+                <div class="task">
+                    <div class="task-checkbox">
+                        <div class="checkbox">
+                            <i class="fa-regular fa-circle"></i>
+                        </div>
+                    </div>
+                    <p>Task</p>
+                </div>
+                <div class="task">
+                    <div class="task-checkbox">
+                        <div class="checkbox clickable">
+                            <i class="fa-regular fa-circle"></i>
+                        </div>
+                    </div>
+                    <p>Task</p>
+                    <div class="remove-task clickable">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div> -->
+            </div>
+            <div class="mainbar-btn icon-btn" id="task-btn">
+                <img src="../src/imgs/plus.png" class="icon" alt="calendar icon">
+                <span>Add Task</span>
+            </div>
+            <div class="test" id="task-adder">
+                <input type="text" name="task-input" id="task-input">
+                <div class="cancel clickable">
+                    <i class="fa-solid fa-xmark fa-2x"></i>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright © 2023 Matias Dure</p>
+    </footer>
+</body>
+</html>

@@ -28,12 +28,6 @@
                             <span>Inbox</span>
                         </div>
                     </div>
-                    <h1>Projects</h1>
-                    <div id="projects-container"></div>
-                    <div class="side-btn icon-btn" data-type="AddProject">
-                        <img src="../src/imgs/plus.png" class="icon" alt="calendar icon">
-                        <span>Add Project</span>
-                    </div>
                 </div>
             </nav>
         </div>
@@ -41,13 +35,13 @@
             <h1 id="projectTitle">Inbox</h1>
             <div id="tasks-container" class="tasks-container">
             </div>
-            <div class="mainbar-btn icon-btn" id="task-btn">
+            <div class="mainbar-btn icon-btn clickable" id="task-btn">
                 <img src="../src/imgs/plus.png" class="icon" alt="calendar icon">
                 <span>Add Task</span>
             </div>
-            <div class="test" id="task-adder">
+            <div class="test hidden" id="task-adder">
                 <input type="text" name="task-input" id="task-input">
-                <div class="cancel clickable">
+                <div class="cancel clickable" id="task-cancel">
                     <i class="fa-solid fa-xmark fa-2x"></i>
                 </div>
             </div>

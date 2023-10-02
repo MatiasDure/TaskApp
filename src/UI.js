@@ -1,55 +1,42 @@
 import { RemoveCookie } from "./cookies";
+import { ManageTaskCreation } from "./addItem";
 
-const projectsDiv = document.getElementById("projects-container");
-const tasksDiv = document.getElementById("tasks-container");
-
-const checkboxes = Array.from(document.getElementsByClassName("checkbox"));
-checkboxes.forEach((checkbox) => {
-    HandleCheckboxClick(checkbox);
-});
-
-export const CreateTaskUI = (pTask) =>
+export function HandleCheckboxClick(pCheckbox)
 {
-    let div = document.createElement("div");
-    div.classList.add("task");
-    let taskCheckbox = document.createElement("div");
-    taskCheckbox.classList.add("task-checkbox");
-    div.appendChild(taskCheckbox);
-    let checkbox = document.createElement("div");
-    checkbox.classList.add("checkbox","clickable");
-    checkboxes.push(checkbox);
-    HandleCheckboxClick(checkbox);
-    taskCheckbox.appendChild(checkbox);
-    let icon = document.createElement("i");
-    icon.classList.add("fa-regular","fa-circle");
-    checkbox.appendChild(icon);
-    let task = document.createElement("p");
-    task.textContent = pTask;
-    div.appendChild(task);
-    
-    let removeTaskBtn = document.createElement("div");
-    removeTaskBtn.classList.add("remove-task","clickable");
-    HandleRemoveClick(removeTaskBtn,div,pTask);
-    let removeIcon = document.createElement("i");
-    removeIcon.classList.add("fa-solid","fa-xmark");
-    removeTaskBtn.appendChild(removeIcon);
-    div.appendChild(removeTaskBtn);
-
-    tasksDiv.appendChild(div);
-}
-
-function HandleCheckboxClick(checkbox)
-{
-    checkbox.addEventListener("click", () => {
-        checkbox.classList.toggle("checked");
+    pCheckbox.addEventListener("click", () => {
+        pCheckbox.classList.toggle("checked");
     });
 }
 
-function HandleRemoveClick(removeBtn, task, taskValue)
+export function HandleRemoveTask(pRemoveBtn, pContainer, pElement, pTask)
 {
-    removeBtn.addEventListener("click", () => {
-        console.log(task);
-        tasksDiv.removeChild(task);
-        RemoveCookie("tasks",taskValue);
+    pRemoveBtn.addEventListener("click", () => {
+        console.log("Removing task: " + pTask);
+        pContainer.removeChild(pElement);
+        RemoveCookie("tasks",pTask);
+    });
+}
+
+export function HandleAddInputClick(pBtnTrigger, pAddBtn, pInputField)
+{
+    pBtnTrigger.addEventListener("click", () => {
+        ToggleAddTask(pAddBtn, pInputField);
+    });
+}
+
+export function ToggleAddTask(pAddBtn, pInputField)
+{
+    pAddBtn.classList.toggle("hidden");
+    pInputField.classList.toggle("hidden");
+}
+
+export function HandleInputTextSend(pInputField, pAddBtn, pTaskElement)
+{
+    pInputField.addEventListener("keyup", (event) => {
+        if(event.key !== "Enter") return;
+    
+        ManageTaskCreation(pInputField.value); 
+        pInputField.value = "";
+        ToggleAddTask(pAddBtn, pTaskElement);
     });
 }

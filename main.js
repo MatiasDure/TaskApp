@@ -216,7 +216,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _tasks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tasks */ \"./src/tasks.js\");\n/* harmony import */ var _node_modules_fortawesome_fontawesome_free_css_solid_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../node_modules/@fortawesome/fontawesome-free/css/solid.css */ \"./node_modules/@fortawesome/fontawesome-free/css/solid.css\");\n/* harmony import */ var _node_modules_fortawesome_fontawesome_free_css_regular_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../node_modules/@fortawesome/fontawesome-free/css/regular.css */ \"./node_modules/@fortawesome/fontawesome-free/css/regular.css\");\n/* harmony import */ var _node_modules_fortawesome_fontawesome_free_css_fontawesome_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../node_modules/@fortawesome/fontawesome-free/css/fontawesome.css */ \"./node_modules/@fortawesome/fontawesome-free/css/fontawesome.css\");\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n\r\n//font-awesome icons\r\n\r\n\r\n\r\n\r\n\r\n(0,_tasks__WEBPACK_IMPORTED_MODULE_0__.LoadTasksCookies)();\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _tasks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tasks */ \"./src/tasks.js\");\n/* harmony import */ var _node_modules_fortawesome_fontawesome_free_css_solid_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../node_modules/@fortawesome/fontawesome-free/css/solid.css */ \"./node_modules/@fortawesome/fontawesome-free/css/solid.css\");\n/* harmony import */ var _node_modules_fortawesome_fontawesome_free_css_regular_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../node_modules/@fortawesome/fontawesome-free/css/regular.css */ \"./node_modules/@fortawesome/fontawesome-free/css/regular.css\");\n/* harmony import */ var _node_modules_fortawesome_fontawesome_free_css_fontawesome_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../node_modules/@fortawesome/fontawesome-free/css/fontawesome.css */ \"./node_modules/@fortawesome/fontawesome-free/css/fontawesome.css\");\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n/* harmony import */ var _imgs_plus_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./imgs/plus.png */ \"./src/imgs/plus.png\");\n\r\n//font-awesome icons\r\n\r\n\r\n\r\n\r\n//import images used\r\n\r\n\r\n(0,_tasks__WEBPACK_IMPORTED_MODULE_0__.LoadTasksCookies)();\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
@@ -267,6 +267,16 @@ eval("module.exports = __webpack_require__.p + \"d75e3fd1eb12e9bd6655.ttf\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"b6879d41b0852f01ed5b.woff2\";\n\n//# sourceURL=webpack:///./node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2?");
+
+/***/ }),
+
+/***/ "./src/imgs/plus.png":
+/*!***************************!*\
+  !*** ./src/imgs/plus.png ***!
+  \***************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"dad470573f8d5145390e.png\";\n\n//# sourceURL=webpack:///./src/imgs/plus.png?");
 
 /***/ })
 
